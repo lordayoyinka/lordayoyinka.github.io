@@ -93,3 +93,13 @@
     });
 })(jQuery);
 
+document.addEventListener("DOMContentLoaded", function () {
+    const startYear = 2015;
+    const currentYear = new Date().getFullYear();
+    const yearsOfExperience = currentYear - startYear;
+  
+    const experienceEl = document.getElementById("experience-years");
+    if (experienceEl) {
+      experienceEl.textContent = yearsOfExperience;
+    }
+  });
