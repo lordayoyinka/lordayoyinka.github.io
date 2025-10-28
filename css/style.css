@@ -216,3 +216,51 @@
 .testimonial-carousel .owl-dot.active {
   background: var(--primary);
 }
+
+
+.skills {
+  text-align: center;
+  background-color: #2f3640;
+  color: white;
+  padding: 50px 20px;
+}
+
+.skills h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.skill-item i {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.skill-item span {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+}
+
+.skill-item i.fa-html5 { color: #e34c26; }
+.skill-item i.fa-css3-alt { color: #264de4; }
+.skill-item i.fa-js { color: #f7df1e; }
+.skill-item i.fa-php { color: #777bb3; }
+.skill-item i.fa-wordpress { color: #21759b; }
+.skill-item i.fa-blogger-b { color: #f57d00; }
