@@ -266,9 +266,6 @@
 .skill-item i.fa-blogger-b { color: #f57d00; }
 
 /* adjusting horizontal scrolling */
-
-/*for mobile skills adjustment*/
-
 /* Keep icons colorful and full size across all screens */
 .skill-icons i {
   filter: none !important;           /* remove any grayscale filter */
