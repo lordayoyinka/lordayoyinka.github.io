@@ -265,7 +265,7 @@
 .skill-item i.fa-wordpress { color: #21759b; }
 .skill-item i.fa-blogger-b { color: #f57d00; }
 
-
+/* adjusting horizontal scrolling */
 html, body {
   margin: 0;
   padding: 0;
@@ -281,4 +281,44 @@ img, iframe {
   max-width: 100%;
   height: auto;
   display: block;
+}
+/*for mobile skills adjustment*/
+
+/* Keep icons colorful and full size across all screens */
+.skill-icons i {
+  filter: none !important;           /* remove any grayscale filter */
+  transform: scale(1) !important;    /* keep full size */
+  opacity: 1 !important;
+  font-size: 60px;                   /* large default size */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Text below icons */
+.skill-item span {
+  font-size: 1.1em;
+  color: white;
+}
+
+/* Hover effect (optional, adds interactivity) */
+.skill-item:hover i {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+/* Make sure mobile doesn’t shrink the icons */
+@media (max-width: 768px) {
+  .skill-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .skill-item i {
+    font-size: 60px !important; /* keep them big on mobile */
+  }
+
+  .skill-item span {
+    font-size: 1.1em;
+  }
 }
