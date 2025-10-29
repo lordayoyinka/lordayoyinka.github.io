@@ -312,3 +312,57 @@
 }
 
 /*for testimonial collapsing*/
+
+/* === FIXED PROFILE SECTION === */
+.profile-side {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 35%;              /* adjust width as needed */
+  height: 100vh;
+  background-color: #2f3640;  /* match your theme */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  z-index: 10;
+}
+
+/* === SCROLLABLE CONTENT SIDE === */
+.content-side {
+  margin-left: 35%;        /* same as profile width */
+  width: 65%;
+  padding: 40px 20px;
+  overflow-x: hidden;
+}
+
+/* === PREVENT HORIZONTAL SCROLL GLOBALLY === */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Prevent inner elements from stretching wider than screen */
+section, div, header, footer {
+  overflow-x: clip;
+}
+
+/* Responsive behavior on mobile (stacked view) */
+@media (max-width: 768px) {
+  .profile-side {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .content-side {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px 10px;
+  }
+}
