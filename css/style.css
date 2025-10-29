@@ -303,3 +303,8 @@
     font-size: 1.1em;
   }
 }
+/* Prevent horizontal scrolling on all screens */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
