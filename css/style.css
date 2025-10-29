@@ -266,41 +266,28 @@
 .skill-item i.fa-blogger-b { color: #f57d00; }
 
 /* adjusting horizontal scrolling */
-/* --- FIX HORIZONTAL SCROLL WITHOUT WIDENING PAGE --- */
+
+
+
+
+/* Fix unwanted horizontal scroll without affecting layout */
 html, body {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
 }
 
-/* Only hide horizontal overflow for body, not for all elements */
-body {
-  margin: 0;
-  padding: 0;
+/* Prevent any element from stretching beyond the screen */
+section, div, header, footer {
+  overflow-x: clip; /* clip is safer than hidden, prevents collapse */
 }
 
-/* Ensure images & sections don’t overflow */
+/* Make sure images or icons don’t cause overflow */
 img, iframe {
   max-width: 100%;
   height: auto;
   display: block;
 }
-
-/* Remove global max-width so layout width stays normal */
-section, div, header, footer {
-  overflow-x: clip; /* safer than hidden for layout */
-}
-
-/* For safety: prevent accidental scrollbar creation */
-.container, .wrapper, .main, .content {
-  width: auto;
-  max-width: 100%;
-}
-
-
-
-
-
 
 /* Keep icons colorful and full size across all screens */
 .skill-icons i {
