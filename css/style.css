@@ -266,29 +266,6 @@
 .skill-item i.fa-blogger-b { color: #f57d00; }
 
 /* adjusting horizontal scrolling */
-
-
-
-
-/* Fix unwanted horizontal scroll without affecting layout */
-html, body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-/* Prevent any element from stretching beyond the screen */
-section, div, header, footer {
-  overflow-x: clip; /* clip is safer than hidden, prevents collapse */
-}
-
-/* Make sure images or icons don’t cause overflow */
-img, iframe {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
 /* Keep icons colorful and full size across all screens */
 .skill-icons i {
   filter: none !important;           /* remove any grayscale filter */
